@@ -24,4 +24,4 @@ echo "johndoe:CL:johndoepassword123" > /etc/3proxy/.proxyauth
 chmod 600 /etc/3proxy/.proxyauth
 
 # Start service
-/etc/init.d/3proxy restart
+/etc/init.d/3proxy start
