@@ -18,3 +18,10 @@ cd /etc/init.d/
 wget --no-check-certificate  https://raw.github.com/encipher88/3proxy/master/3proxy
 chmod  +x /etc/init.d/3proxy
 update-rc.d 3proxy defaults
+
+# Change authentication
+echo "johndoe:CL:johndoepassword123" > /etc/3proxy/.proxyauth
+chmod 600 /etc/3proxy/.proxyauth
+
+# Start service
+/etc/init.d/3proxy restart
